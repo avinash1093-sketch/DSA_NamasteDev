@@ -10,7 +10,7 @@ function checkPalindrome(n) {
     }
     return rev === nCopy;
 }
-
+ 
 let result = checkPalindrome(-121);
 console.log(result);
 
