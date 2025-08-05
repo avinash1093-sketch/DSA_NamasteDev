@@ -15,6 +15,7 @@ console.log(10 + 2 + "9"); //129
 console.log(isNaN(null));  // false
 console.log(isNaN(-1)); // false
 console.log(isNaN(Infinity));//false
+console.log(isNaN(Infinity));//false
 
 
 
