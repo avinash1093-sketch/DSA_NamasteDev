@@ -13,16 +13,23 @@
 // console.log(result);
 
 async function hello() {
-  let result = setTimeout(() => {
-      let a = divide()
-      return a;
-  }, 1000);
-  console.log('Done');
+  let result = await divide();
   console.log(result);
+  console.log('Done');
 };
 
+
+
+
+
 function divide() {
-  return 6 / 2;
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let a = 6 / 2;
+      resolve(a);
+    }, 5000);
+
+  })
 }
 
 console.log('Now Done');
